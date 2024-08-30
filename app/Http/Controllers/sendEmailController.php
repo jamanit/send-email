@@ -19,7 +19,7 @@ class sendEmailController extends Controller
             'text' => 'Ini text email...',
         ];
 
-        $email_target = 'rikidavidtra.2310@gmail.com';
+        $email_target = 'testing@gmail.com';
 
         Mail::to($email_target)->send(new sendEmail($data));
 
